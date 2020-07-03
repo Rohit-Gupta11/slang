@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(250, 169, 56);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EDDE5D, rgb(250, 169, 56));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EDDE5D, rgb(250, 169, 56)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+/* ---------------------navbar---------------------------------------------------------------------- */
+.header{
+    background-color: rgba(242,116,5,0.2);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navbar{
+    font-family: 'MuseoModerno', cursive;
+}
+
+.icon-img{
+    height: 1.2rem!important;
+    cursor: pointer;
+}
+
+.navbar ul li:hover{
+    border-bottom: 2px solid rgba(242,116,5,1);
+}
+/* -----------------------main----------------------------------------------------------------------- */
+.main{
+    font-family: 'MuseoModerno', cursive;
+}
+
+.main-button button{
+    border-radius: 2rem;
+    border: 2px solid rgba(242,116,5,1);
+}
+
+.main-button button:hover{
+    background-image: linear-gradient( 179.9deg,  rgba(217,164,4,1) 10.7%, rgba(242,116,5,1) 113.2% );
+}
+
+.main-text hr{
+    margin-top: 0;
+    border-top: 2px solid rgba(242,116,5,0.4);
+}
+
+.main hr{
+    border-top: 2px solid rgba(242,116,5,0.4);
+}
+
+/* ------------------------blog---------------------------------------------------------------------- */
+
+.card{
+    font-family: 'MuseoModerno', cursive;
+    background-color: rgba(242,116,5,0.5);
+}
+
+.blog-title{
+    font-family: 'MuseoModerno', cursive;
+    border-bottom: 4px solid rgba(242,116,5,1);
+    font-size: 3.5rem;
+}
+
+.bg-custom-1 {
+    background-color: rgba(242,116,5,0.2)!important;
+}
+
+.card-button{
+    border-radius: 2rem;
+    border: 2px solid rgba(242,116,5,1)!important;
+    background-image: linear-gradient( 179.9deg,  rgba(217,164,4,1) 10.7%, rgba(242,116,5,1) 113.2% );
+}
+
+.card-button:hover{
+    background-image: none;
+    border: 2px solid rgba(242,116,5,1);
+}
+
+.blog hr{
+    border-top: 2px solid rgba(242,116,5,0.4);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+/* -----------------------contact --------------------------------------------------------------*/
+.contact{
+    font-family: 'MuseoModerno', cursive;
+}
+
+.contact-button button{
+    border-radius: 2rem;
+    border: 2px solid rgba(242,116,5,1);
+}
+
+.contact-button button:hover{
+    background-image: linear-gradient( 179.9deg,  rgba(217,164,4,1) 10.7%, rgba(242,116,5,1) 113.2% )!important;
+}
+
+.contact-title{
+    font-family: 'MuseoModerno', cursive;
+    border-bottom: 4px solid rgba(242,116,5,1);
+    font-size: 3.5rem;
+}
+
+.custom-font{
+    font-size: 1.2rem;
+}
+
+.contact hr{
+    border-top: 2px solid rgba(242,116,5,0.4);
+}
+
+/* --------------------------footer------------------------------------------------------------------- */
+.apeal{
+    font-family: 'MuseoModerno', cursive;
+}
+
+footer hr{
+    border-top: 2px solid rgba(242,116,5,0.4);
+}
+
+/* ------------------------responsive----------------------------------------------------------------- */
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar ul li:hover{
+        border-bottom: none!important;
+    }
+    #main-box{
+        flex-direction: column!important;
+    }
+    #blog-card{
+        flex-direction: column!important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar ul li:hover{
+        border-bottom: none!important;
+    }
+    #main-box{
+        flex-direction: column!important;
+    }
+    #blog-card{
+        flex-direction: column!important;
+    }
+}
